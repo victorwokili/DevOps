@@ -1,0 +1,108 @@
+
+   36  docker tag anselmenumbisia/sonar:1.0 anselmenumbisia/test:1.0
+   37  docker push anselmenumbisia/test:1.0
+   38  docker rmi anselmenumbisia/sonar:1.0 anselmenumbisia/test:1.0
+   39  docker image ls
+   40  ls
+   41  cd simple-webapp-master/
+   42  ls
+   43  cd dockerfile-setup/
+   44  ls
+   45  cd src/
+   46  ls
+   47  cd ..
+   48  ls
+   49  clear
+   50  docker build -t anselmenumbisia/nginx-app:1.0 .
+   51  docker scout quickview
+   52  docker scout recommendations anselmenumbisia/nginx-app
+   53  docker scout recommendations anselmenumbisia/nginx-app:1.0
+   54  docker --name nginx run -d -p 80:80 anselmenumbisia/nginx-app:1.0
+   55  docker run --name nginx -d -p 80:80 anselmenumbisia/nginx-app:1.0
+   56  docker ps
+   57  docker rm -f 894bf2bdcd14
+   58  clear
+   59  docker rmi anselmenumbisia/nginx-app:1.0
+   60  cd ../
+   61  ls
+   62  cd simple-app2/
+   63  ls
+   64  clear
+   65  docker build -t test-app:1.0 .
+   66  docker scout quickview test-app:1.0
+   67  docker scout cves test-app:1.0
+   68  clear
+   69  docker run --name test -d -p 8080:80 test-app:1.0
+   70  docker ps
+   71  docker ps -a
+   72  docker logs 670cd18ac95a
+   73  docker logs 670cd18ac95a
+   74  docker ps -a
+   75  docker run --name test -d -p 80:80 test-app:1.0
+   76  docker run --name test1 -d -p 80:80 test-app:1.0
+   77  docker ps
+   78  docker ps
+   79  docker ps
+   80  docker rm test test1
+   81  docker rmi test-app:1.0
+   82  docker build -t test-app:1.0 .
+   83  docker run --name test1 -d -p 80:80 test-app:1.0
+   84  docker ps
+   85  docker ps
+   86  docker ps
+   87  docker ps
+   88  docker logs 54a98c2ba275
+   89  docker rm -f 54a98c2ba275
+   90  docker rmi test-app:1.0
+   91  cd ../webapp1/
+   92  ls
+   93  docker build -t flask-app:1.0 .
+   94  docker scout quickview flask-app:1.0
+   95  docker scout cves flask-app:1.0
+   96  docker run --name test1 -d -p 8080:8080 flask-app:1.0
+   97  docker rm -f d137bcbfbffd81304a3c217a917f4899e1dd868140779e5cec50a138de0ff693
+   98  docker rmi flask-app:1.0
+   99  clear
+  100  docker image ls
+  101  docker tag sonarqube:latest anselmenumbisia/sonarqube:1.0
+  102  docker images
+  103  docker login
+  104  docker push anselmenumbisia/sonarqube
+  105  docker push anselmenumbisia/sonarqube:1.0
+  106  docker images
+  107  docker tag sonarqube:latest anselmenumbisia/sonarqube:2.0
+  108  docker images
+  109  docker push anselmenumbisia/sonarqube:2.0
+  110  aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 389029577690.dkr.ecr.ca-central-1.amazonaws.com
+  111  aws sts get-caller-identity
+  112  aws sts get-caller-identity
+  113  aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 389029577690.dkr.ecr.ca-central-1.amazonaws.com
+  114  clear
+  115  docker images
+  116  docker tag sonarqube:latest 389029577690.dkr.ecr.ca-central-1.amazonaws.com/sonarqube:1.0
+  117  ls
+  118  docker images
+  119  docker push 389029577690.dkr.ecr.ca-central-1.amazonaws.com/sonarqube:1.0
+  120  git remote -v
+  121  clear
+  122  ls
+  123  docker build -t python-app .
+  124  docker images
+  125  docker build -t python-app:1.0 .
+  126  docker images
+  127  docker run --name python-app -d -p 8080:8080 python-app:1.0
+  128  docker ps
+  129  clear
+  130  cd ../dockerfile-setup/
+  131  ls
+  132  docker build -t nginx-app:1.0 .
+  133  docker images
+  134  docker run --name nginx-app -d -p 80:80 nginx-app:1.0
+  135  docker ps
+  136  cd ../webapp1/
+  137  ls
+  138  docker build -t test:1 .
+  139  docker ps
+  140  docker logs 4ade778d8ca1
+  141  history
+  142  history > history.txt
