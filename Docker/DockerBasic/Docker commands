@@ -17,7 +17,7 @@ docker save <image name>  >  filename.tar or docker save <image name> -o sonarqu
 
 docker image load --input <file-name> : To load a docker image from a tar file back into the local repository
 
-Docker inspect
+Docker inspect <image name>
 
 #############################################
 ## Container Commands
