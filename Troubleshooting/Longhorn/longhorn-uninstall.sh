@@ -4,6 +4,7 @@
 LONGHORN_NAMESPACE="longhorn-system"
 helm uninstall longhorn --namespace $LONGHORN_NAMESPACE --no-hooks --timeout 3m
 kubectl -n $LONGHORN_NAMESPACE patch -p '{"value": "true"}' --type=merge lhs deleting-confirmation-flag
+
 # Uninstall Longhorn using Helm
 echo -e "\nUninstalling Longhorn...\n"
 
