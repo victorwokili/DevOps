@@ -1,6 +1,6 @@
 # Longhorn Namespace Stuck Terminating - Delete Longhorn from Kubernetes Cluster
 
-## Official Documentation on how to delete Longhorn from Kubernetes Cluster. If I have read this before trying to delete longhorn, I would have two more hours of my life, so please do you a favor.
+## Official Documentation on how to delete Longhorn from Kubernetes Cluster. If I have read this before trying to delete longhorn, I would have two more hours of my life, so please do yourself a favor 😒.
 
 So, I recently tried to delete Longhorn, a cloud native distributed block storage, from one of my Kubernetes clusters and did it wrong. My error was to delete the longhorn resources without deleting the PVCs first. And even after deleting the PVCs Custom resource definitions they were still there. Since this cost me some time to debug and longhorn is pretty popular, I thought it would be a good idea to write a few words about this.
 
