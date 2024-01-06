@@ -15,4 +15,4 @@ So, I recently tried to delete Longhorn, a cloud native distributed block storag
 For desperate googlers I also leave the error which I got after trying to reinstall longhorn in a Cluster with the namespace longhorn-system stuck in “Terminating”.
 
 
-[^1]: [Reference](https://avasdream.engineer/kubernetes-longhorn-stuck-terminating)https://avasdream.engineer/kubernetes-longhorn-stuck-terminating 
+[Reference](https://avasdream.engineer/kubernetes-longhorn-stuck-terminating)
