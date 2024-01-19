@@ -103,8 +103,8 @@ docker run --name <name of container> -d -p 8080:80 --network <name of network> 
 
 docker exec -it <name of container> bash 
 
-# Update container: apt update -y
-# install ping: apt install inetutils-ping -y
+ Update container: apt update -y
+ install ping: apt install inetutils-ping -y
 
-# ping <ip of other container>
+ ping <ip of other container>
 
