@@ -19,9 +19,9 @@ docker image load --input <file-name> : To load a docker image from a tar file b
 
 Docker inspect <image name>
 
-#############################################
+# #############################################
 ## Container Commands
-
+# #############################################
 docker run <image name>: to start and run a container
 
 docker run --detached or docker run -d : to run docker in detached mode or backgroud mode so you can have access to your terminal while container runs in the backend.
@@ -76,9 +76,9 @@ docker run --name <container name> -d -p 8000:8080 <image-name:tag>
 
 
 
-###################################
+# #############################################
 ## Docker volume
-
+# #############################################
 docker volume create <volume name>
 
 docker run -v <host-path:container-path> <image>
@@ -93,10 +93,9 @@ docker exec <cont-ID> -- cat /etc/*release*
 docker exec -it <name of container> bash 
 
 
-#############################################
-
+# #############################################=
 Docker network
-##################################################
+# #############################################
 
 docker network create <name of network>
 docker run --name <name of container> -d -p 8080:80 --network <name of network> nginx
