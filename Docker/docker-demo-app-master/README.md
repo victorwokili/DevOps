@@ -3,9 +3,12 @@
 This demo app shows a simple user profile app set up using 
 - index.html with pure js and css styles
 - nodejs backend with express module
-- mongodb for data storage
+- mongodb for data storage \n
 
-All components are docker-based
+![image](https://github.com/victorwokili/DevOps/assets/18079443/c2bb6d5b-d215-48a0-ba0d-a5be6774949e)
+
+
+\n All components are docker-based
 
 ### With Docker
 
