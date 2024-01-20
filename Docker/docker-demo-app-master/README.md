@@ -7,6 +7,9 @@ This demo app shows a simple user profile app set up using
 
 ![image](https://github.com/victorwokili/DevOps/assets/18079443/c2bb6d5b-d215-48a0-ba0d-a5be6774949e)
 
+![image](https://github.com/victorwokili/DevOps/assets/18079443/59abec8b-d6e1-4007-9084-cac4e658e6d5)
+
+
 
 /n All components are docker-based
 
