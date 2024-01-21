@@ -81,3 +81,8 @@ Step 5: access the nodejs application from browser
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+
+
+
+<img width="1643" alt="image" src="https://github.com/victorwokili/DevOps/assets/18079443/ad51d1c9-aaf1-4b69-93c2-97302917743e">
+
