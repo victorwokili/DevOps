@@ -2,6 +2,7 @@
 ## Docker commands
 
 ## Image commands
+docker tag <old image name:old tag> <image name of directory:tag> : to tag image for uploading to registry
 
 docker pull <image name:tag> : to pull image from a docker registry
 
