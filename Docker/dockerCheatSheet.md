@@ -23,6 +23,8 @@ Docker inspect <image name>
 ### #############################################
 ## Container Commands
 ### #############################################
+docker run -it --rm ubuntu:22.04 : run the container in interactive mode and remove it when exited from the interactive shell
+
 docker run <image name>: to start and run a container
 
 docker run --detached or docker run -d : to run docker in detached mode or backgroud mode so you can have access to your terminal while container runs in the backend.
