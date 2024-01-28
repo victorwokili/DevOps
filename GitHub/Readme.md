@@ -29,7 +29,8 @@ Stage all changes (including new files) for the next commit:
 ```shell
 git add .
 ```
-OR, stage specific files or folders:
+   OR, stage specific files or folders:
+     
 ```shell
 git add file-name
 git add folder-name/
