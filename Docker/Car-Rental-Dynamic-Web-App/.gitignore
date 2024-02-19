@@ -1,1 +1,5 @@
 Dockerfile-reference
+Dockerfile
+build_image.sh
+rentzone.env
+
