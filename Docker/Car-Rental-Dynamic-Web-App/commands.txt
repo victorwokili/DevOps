@@ -8,18 +8,23 @@ chmod +x build_image.sh
 
 # aws cli command to create an amazon ecr repository
 aws ecr create-repository --repository-name <repository-name> --region <region>
-  
+aws ecr create-repository --repository-name rentzone --region us-east-1
 ----------------------------------------------------------------
-
+# PUSHING IMAGE TO ECR REPOSITORY WITH DOCKER PUSH
 # retag docker image 
 docker tag <image-tag> <repository-uri>
+docker tag  rentzone 687746774026.dkr.ecr.us-east-1.amazonaws.com/rentzone
 
 # login to ecr
 aws ecr get-login-password | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
+aws ecr get-login-password | docker login --username AWS --password-stdin 687746774026.dkr.ecr.us-east-1.amazonaws.com
+
+#if having issues, add the region tag
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 687746774026.dkr.ecr.us-east-1.amazonaws.com
 
 # push docker image to ecr repository 
 docker push <repository-uri>
-  
+docker push 687746774026.dkr.ecr.us-east-1.amazonaws.com/rentzone  
 ----------------------------------------------------------------
 
 # to create an ssh tunnel in powershell, execute the following command:
